@@ -1,3 +1,280 @@
-/*
- * Estilos de tu proyecto
- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato;
+  margin: 0;
+}
+
+#header, #portfolio, #about, #contact, footer, nav, ul, .copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: central;
+}
+
+#header, #about {
+  background-color: #18bc9c;
+  color: white;
+}
+
+#portfolio, #contact {
+  background-color: white;
+  color: #2c3e50;
+}
+
+#header {
+  height: 631px;
+}
+
+#portfolio {
+  height: 791px;
+}
+
+#about {
+  height: 516px;
+}
+
+#contact {
+  height: 800px;
+}
+
+footer {
+  height: 235px;
+}
+
+footer, nav, ul, .copyright {
+  background-color: #2c3e50;
+  color: white;
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+  font-family: Montserrat;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  height: 80px;
+  justify-content: space-around;
+}
+
+.navbar-title-link {
+  font-size: 27px;
+  white-space: nowrap;
+}
+
+.navbar-links {
+  display: flex;
+  font-size: 10px;
+}
+
+.navbar-link {
+  margin: 10px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1020px;
+}
+
+.container h1 {
+  font-size: 68px;
+  letter-spacing: -1.5px;
+}
+
+.text-header {
+  font-size: 26px;
+  font-family: Lato;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  margin-top: 28px;
+  margin-bottom: -55px;
+}
+
+img {
+  width: 230px;
+  margin-top: -45px;
+  margin-bottom: 20px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+hr.star-white, hr.star-black {
+  max-width: 225px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 5px;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+
+hr.star-white:after {
+  color: white;
+  background-color: #18bc9c;
+}
+
+hr.star-black:after {
+  color: #2c3e50;
+  background-color: white;
+}
+
+hr.star-black {
+border-color: #2c3e50;
+}
+
+hr.star-white:after, hr.star-black:after {
+  position: relative;
+  top: -23px;
+  display: inline-block;
+  padding: 7px;
+  content: '\e9d9';
+  font-family: 'icomoon';
+  font-size: 28px;
+}
+
+.text-div-black, .text-div-white {
+  font-size: 42px;
+  line-height: 20px;
+  font-family: Montserrat;
+  margin-top: 0px;
+}
+
+.text-div-black {
+  color: #2c3e50;
+}
+
+.tex-div-white {
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+}
+
+img.img-potfolio {
+  width: 316px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+p.text-about {
+  text-align: left;
+  margin-left: 12px;
+  margin-right: 11px;
+}
+
+.icon-download {
+  margin-right: 5px;
+}
+
+button {
+  border-radius: 4%;
+  color: white;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.button-download {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 10px 12px;
+}
+
+.form-text {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: Lato;
+  border-color: transparent;
+  width: 660px;
+  border-bottom: 1px solid lightgrey;
+  height: 90px;
+}
+
+.form-textarea {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: Lato;
+  border-color: transparent;
+  width: 660px;
+  border-bottom: 1px solid lightgrey;
+  height: 160px;
+  margin-top: 25px;
+}
+
+.button-form {
+  border: 2px solid #18bc9c;
+  background-color: #18bc9c;
+  color: white;
+  font-weight: bold;
+  border-radius: 6%;
+  margin-top: 20px;
+  margin-left: -587px;
+  padding: 10px 10px;
+}
+
+.text-footer {
+  font-size: 24px;
+}
+
+.copyright {
+  height: 100px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: -14px;
+}
+
+a {
+  color: #18bc9c;
+}
+
+.button-icon {
+  color: white;
+  border-radius: 100%;
+  padding: 12px;
+  border: 2px solid white;
+  display: flex;
+}
+
+ul.icons {
+  justify-content: space-around;
+  max-width: 300px;
+  margin-top: 40px;
+}
+
